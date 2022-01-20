@@ -1,11 +1,12 @@
 <template>
+<navbar/>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
   <div id="sex1">
    <h1>To-Do List</h1>
   <ul>
     <li>
-      <to-do-item label="My ToDo Item 3"></to-do-item>
+      <to-do-item label="My ToDo Item 3"/>
     </li>
   </ul>
   </div>
@@ -13,14 +14,18 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
 import ToDoItem from './components/ToDoItem.vue';
+import navbar from './components/navbar.vue';
+
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    ToDoItem
+    ToDoItem,
+    navbar
+
   }
 }
 </script>
